@@ -13,7 +13,7 @@ tasks = [
     {
         'id': 1,
         'title': u'Zakupy',
-        'description': u'Chleb, Mleko, Kefir', 
+        'description': u'Chleb, Mleko, Kefir, Masło', 
         'done': False
     },
     {
