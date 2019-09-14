@@ -2,8 +2,9 @@
 
 	apt-get install python3-venv
 	python3 -m venv flask
-	exitflask/bin/pip install flask
+	flask/bin/pip install flask
 	flask/bin/pip install flask-httpauth
+
 
 
 2. Użycie
@@ -20,4 +21,8 @@ curl -i -H "Content-Type: application/json" -X POST -d '{"title":"Read a book"}'
 
 c) Update
 curl -i -H "Content-Type: application/json" -X PUT -d '{"done":true}' http://localhost:5000/todo/api/v1.0/tasks/2
+
+4. Docker
+a) FLASK_APP=app.py flask run --host=0.0.0.0
+
 
