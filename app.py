@@ -1,6 +1,6 @@
 #!flask/bin/python
 
-from flask import Flask, jsonify, abort, make_response, request, url_for
+from flask import Flask, jsonify, abort, make_response, request, url_for, send_from_directory
 from flask_httpauth import HTTPBasicAuth
 
 app = Flask(__name__)
@@ -16,10 +16,10 @@ def get_password(username):
 def unauthorized():
     return make_response(jsonify({'error': 'Unauthorized access'}), 401)
 
-
 @app.route('/')
 def index():
-    return "API http://localhost:5000/todo/api/v1.0/tasks"
+    return "API http://__IP__:8080/todo/api/v1.0/tasks"
+
 
 tasks = [
     {

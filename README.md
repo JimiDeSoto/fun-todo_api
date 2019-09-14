@@ -23,6 +23,7 @@ c) Update
 curl -i -H "Content-Type: application/json" -X PUT -d '{"done":true}' http://localhost:5000/todo/api/v1.0/tasks/2
 
 4. Docker
-a) FLASK_APP=app.py flask run --host=0.0.0.0
-
+a) usunąć #python
+b) FLASK_APP=app.py flask run --host=0.0.0.0
+c) sudo docker run --rm -p 80:5000
 
